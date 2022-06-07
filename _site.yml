@@ -1,0 +1,14 @@
+
+name: Marc Ohlmann
+output_dir: '.'
+
+navbar:
+  title: Marc Ohlmann
+
+output:
+  html_document:
+    theme: journal
+    highlight: zenburn
+    lib_dir: site_libs
+    self_contained: no
+    
