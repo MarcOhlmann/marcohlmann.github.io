@@ -10,8 +10,16 @@ output:
 
 <br/><br/>
 
+[<img src="pictures/ohlmann.png" alt="MarcO" align="right" style="width:200px; margin-left:100px;">](about.html)
+
+<br/>
+
+Post-doc at Alpine Ecology Lab, Grenoble, France.
 
 Chercheur en post-doctorat au [Laboratoire d'Ecologie Alpine](https://leca.osug.fr/).
 
 **modélisation de la biodiversité** 
 <br/><br/>
+
+[<img src="pictures/picture-papers.jpg" alt="MarcO" align="left" style="width:200px;">](publications.html)
+

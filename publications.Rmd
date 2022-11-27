@@ -1,0 +1,26 @@
+---
+output:
+  html_document:
+    number_sections: no
+    toc: yes
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+---	
+
+<br/><br/>
+
+## [2020]()
+
+<br/>
+
+<!-- <a href="papers/Thuiller_2017_Diversity_Distributions.pdf" class="download" title="Download as PDF"> -->
+<!-- <img src="pictures/art_2017_Thuiller_DD.png" alt="Thuiller 2017 Diversity Distributions" style="width:350px"> -->
+<!-- </a> -->
+
+
+<br/>
+
+- **Ohlmann, M.**, Miele, V., Dray, S., Chalmandrier, L., O’connor, L., & Thuiller, W. (2019). *Diversity indices for ecological networks: a unifying framework using Hill numbers.* Ecology letters, 22(4), 737-747.  https://doi.org/10.1111/ele.13221
+
+

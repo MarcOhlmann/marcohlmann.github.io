@@ -1,0 +1,54 @@
+---
+output:
+  html_document:
+    number_sections: no
+    toc: yes
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+---	
+
+<br/><br/>
+
+
+## Education
+
+<br/>
+
+
+<br/><br>
+
+**University education** 
+
+- *2012 – 2016* :  [<img src="pictures/polytechnique.jpg" alt="X" align="right" style="width:300px;">](https://www.polytechnique.edu/)
+Ingénieur de l'école Polytechnique
+
+<br/><br/>
+
+**School education**
+
+- *July 2010* :  
+Baccalauréat Scientifique, Mention Très bien. Metz (57).
+
+<br/><br/>
+
+
+
+## Skills
+
+<br/>
+
+**Programming**
+
+- *Languages* :  
+R / Python 
+
+- *Tools* :  
+Git
+
+<br/><br/>
+
+## Projects
+
+<br/>
+

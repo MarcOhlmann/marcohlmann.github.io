@@ -1,9 +1,27 @@
-
 name: Marc Ohlmann
 output_dir: '.'
 
 navbar:
   title: Marc Ohlmann
+  type: inverse
+  left:
+  - text: Home
+    icon: fa-home
+    href: index.html
+  - text: About me
+    icon: fa-info
+    href: about.html
+  - text: Publications
+    icon: ion-document-text
+    href: publications.html
+    
+  right:
+  - text: Contact me
+    icon: fa-envelope-o
+    href: marcohlmann@live.fr
+  - text: ''
+    icon: fa-github
+    href: https://github.com/MarcOhlmann
 
 output:
   html_document:
@@ -11,4 +29,3 @@ output:
     highlight: zenburn
     lib_dir: site_libs
     self_contained: no
-    
