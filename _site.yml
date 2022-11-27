@@ -14,6 +14,9 @@ navbar:
   - text: Publications
     icon: ion-document-text
     href: publications.html
+  - text: Tutorial
+    icon: fa-tutorial  
+    href: tutorials.html
     
   right:
   - text: Contact me

@@ -10,17 +10,35 @@ output:
 
 <br/><br/>
 
+## Preprints
+
+- **Ohlmann, M.,** Munoz, F., Massol, F., & Thuiller, W. (2022). *Assessing mutualistic metacommunity capacity by integrating spatial and interaction networks.* arXiv preprint arXiv:2206.11029. https://arxiv.org/abs/2206.11029
+
+- Miele, V., Matias, C., **Ohlmann, M.,** Poggiato, G., Dray, S., & Thuiller, W. (2021). *Quantifying the overall effect of biotic interactions on species communities along environmental gradients.* arXiv preprint arXiv:2103.10433.
+https://arxiv.org/abs/2103.10433
+
+## [2022]()
+
+- Fisogni, A., Hautekèete, N., Piquot, Y., Brun, M., Vanappelghem, C., **Ohlmann, M.**, ... & Massol, F. (2022). *Seasonal trajectories of plant-pollinator interaction networks differ following phenological mismatches along an urbanization gradient.* Landscape and Urban Planning, 226, 104512. https://doi.org/10.1016/j.landurbplan.2022.104512
+
+## [2021]()
+
+- Calderón-Sanou, I., Münkemüller, T., Zinger, L., Schimann, H., Yoccoz, N. G., Gielly, L., Foulquier, A., Hedde, M.,**Ohlmann, M.,** Roy, M., Si-Moussi, S. & Thuiller, W. (2021). *Cascading effects of moth outbreaks on subarctic soil food webs.* Scientific reports, 11(1), 1-12.
+ Arnaud Foulquier, Mickael Hedde, Marc Ohlmann, Mélanie Roy, Sara Si-Moussi & Wilfried Thuiller
+
 ## [2020]()
 
-<br/>
+- O’Connor, L. M., Pollock, L. J., Braga, J., Ficetola, G. F., Maiorano, L., Martinez‐Almoyna, C., Montemaggiori, A., **Ohlmann, M.**, & Thuiller, W. (2020). *Unveiling the food webs of tetrapods across Europe through the prism of the Eltonian niche. Journal of Biogeography*, 47(1), 181-192.  https://doi.org/10.1111/jbi.13773
 
-<!-- <a href="papers/Thuiller_2017_Diversity_Distributions.pdf" class="download" title="Download as PDF"> -->
-<!-- <img src="pictures/art_2017_Thuiller_DD.png" alt="Thuiller 2017 Diversity Distributions" style="width:350px"> -->
-<!-- </a> -->
-
-
-<br/>
+## [2019]()
 
 - **Ohlmann, M.**, Miele, V., Dray, S., Chalmandrier, L., O’connor, L., & Thuiller, W. (2019). *Diversity indices for ecological networks: a unifying framework using Hill numbers.* Ecology letters, 22(4), 737-747.  https://doi.org/10.1111/ele.13221
+- Martinez‐Almoyna, C., Thuiller, W., Chalmandrier, L., **Ohlmann, M.**, Foulquier, A., Clément, J. C., ... & Münkemüller, T. (2019). *Multi‐trophic β‐diversity mediates the effect of environmental gradients on the turnover of multiple ecosystem functions.* Functional Ecology, 33(10), 2053-2064.
 
+- **Ohlmann, M.** (2019). Vers une théorie spatiale des réseaux d'interaction en écologie: méthodes, concepts et applications (Doctoral dissertation, Université Grenoble Alpes). (https://tel.archives-ouvertes.fr/tel-03051711/document)
 
+## [2018]()
+
+- **Ohlmann, M.**, Mazel, F., Chalmandrier, L., Bec, S., Coissac, E., Gielly, L., ... & Thuiller, W. (2018). *Mapping the imprint of biotic interactions on β‐diversity.* Ecology Letters, 21(11), 1660-1669.  https://doi.org/10.1111/ele.13143
+
+- Roy, J., Bonneville, J. M., Saccone, P., Ibanez, S., Albert, C. H., Boleda, M., Gueguen, M., **Ohlmann, M. **, Rioux, D., Clément, J. C., Lavergne, S., & Geremia, R. A. (2018). *Differences in the fungal communities nursed by two genetic groups of the alpine cushion plant, Silene acaulis.* Ecology and evolution, 8(23), 11568-11581.  https://doi.org/10.1002/ece3.4606

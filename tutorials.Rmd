@@ -1,0 +1,27 @@
+---
+output:
+  html_document:
+    number_sections: no
+    toc: no
+---	
+
+<br/><br/> 
+
+### Reperesenting trophic networks with 'metanetwork'
+
+- [pyramid example](https://marcohlmann.github.io/metanetwork/articles/pyramid.html)
+- [Angola dataset analysis](https://marcohlmann.github.io/metanetwork/articles/angola.html)
+- [Norway dataset analysis](https://marcohlmann.github.io/metanetwork/articles/vertebrates.html)
+- [Metaweb of European vertebrates analysis](https://marcohlmann.github.io/metanetwork/articles/vertebrates.html)
+
+[Interactive representation of trophic networks](https://shiny.osug.fr/app/ecological-networks)
+
+### Applying graphical models to community ecology
+
+#### [Graphical models to infer species associations] (Bottoms-up training school INRAE)
+
+<div style="text-align:center;">
+<embed src="documents/Training_school_Ohlmann_multispecies.pdf" width='900' height='700' allowfullscreen webkitallowfullscreen></embed>
+</div>
+
+- [Graphical models applied to community ecology with R](tuto_graphical_models.html)
