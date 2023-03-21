@@ -8,31 +8,43 @@ output:
       smooth_scroll: false
 ---	
 
+
+
+
+<a href="documents/Training_school_Ohlmann_multispecies.pdf">CV détaillé </a>
+
+
+## Experience professionelles 
+
+
+
+
+
 <br/><br/>
 
 
-## Education
+## Éducation
 
 <br/>
 
 
 <br/><br>
 
-**University education** 
+- *2016-2019* : [<img src="pictures/uga.png" alt="UGA" align="right" style="width:100px;">](https://www.univ-grenoble-alpes.fr/) Thèse de doctorat au Laboratoire d'Écologie Alpine, *Vers une théorie spatiale des réseaux d'interactions en écologie: concepts, méthodes et applications* sous la direction de Wilfried Thuiller
 
 - *2012 – 2016* :  [<img src="pictures/polytechnique.jpg" alt="X" align="right" style="width:300px;">](https://www.polytechnique.edu/)
 Ingénieur de l'école Polytechnique
 
 <br/><br/>
 
-**School education**
 
-- *July 2010* :  
+- *2010 - 2012* :
+Classes préparatoires Maths, Physique, Chimie, Lycée Louis-Le-Grand, Paris 
+
+- *2010* :  
 Baccalauréat Scientifique, Mention Très bien. Metz (57).
 
 <br/><br/>
-
-
 
 ## Skills
 
@@ -41,14 +53,21 @@ Baccalauréat Scientifique, Mention Très bien. Metz (57).
 **Programming**
 
 - *Languages* :  
-R / Python 
+R / Python / Latex
 
 - *Tools* :  
 Git
 
 <br/><br/>
 
-## Projects
+## Projets
 
 <br/>
+
+-  [<img src="pictures/anr-projet-logo.jpg" alt="ANR" align="right" style="width:100px;">](https://cmatias.perso.math.cnrs.fr/ANR_EcoNet.html) ANR Econet, *Advanced statistical modelling of ecological networks*
+
+<br>
+<br>
+
+- [<img src="pictures/LogoOR.jpg" alt="ORCHAMP" align="right" style="width:150px;">](https://orchamp.osug.fr/home) ORCHAMP, Observatoire spatio-temporel de la biodiversité et du fonctionnement des socio-écosystèmes de montagne
 
