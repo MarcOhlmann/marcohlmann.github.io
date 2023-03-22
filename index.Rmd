@@ -53,3 +53,7 @@ En particulier, je développe et implémente :
 <br/><br/>
 
 <img src="pictures/edge_bundle_metaweb_labels.png" alt="ORCHAMP" align="center" style="width:600px;">
+
+<br/><br/>
+
+<img src="pictures/metaweb_vrtb.png" alt="ORCHAMP" align="center" style="width:600px;">

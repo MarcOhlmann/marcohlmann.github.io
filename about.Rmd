@@ -64,10 +64,13 @@ Git
 
 <br/>
 
--  [<img src="pictures/anr-projet-logo.jpg" alt="ANR" align="right" style="width:100px;">](https://cmatias.perso.math.cnrs.fr/ANR_EcoNet.html) ANR Econet, *Advanced statistical modelling of ecological networks*
+-  <img src="pictures/anr-projet-logo.jpg" alt="ANR" align="right" style="width:100px;"> [ANR Econet]((https://cmatias.perso.math.cnrs.fr/ANR_EcoNet.html)), *Advanced statistical modelling of ecological networks*
 
 <br>
 <br>
 
-- [<img src="pictures/LogoOR.jpg" alt="ORCHAMP" align="right" style="width:150px;">](https://orchamp.osug.fr/home) ORCHAMP, Observatoire spatio-temporel de la biodiversité et du fonctionnement des socio-écosystèmes de montagne
+- [ORCHAMP](https://orchamp.osug.fr/home) , Observatoire spatio-temporel de la biodiversité et du fonctionnement des socio-écosystèmes de montagne
 
+<img src="pictures/LogoOR.jpg" alt="ORCHAMP" align="center" style="width:150px;"> 
+
+<img src="pictures/ORCHAMP_map.jpg" alt="ORCHAMP" align="center" style="width:600px;"> 
