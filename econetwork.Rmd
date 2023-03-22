@@ -1,0 +1,174 @@
+---
+title: "A tutorial on the 'econetwork' package"
+description: "Computing and partitioning diversity of network and dissimilarity"
+date: "2019-01-07"
+output:
+  html_document:
+    number_sections: no
+    toc: yes
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+---
+
+## Computing network diversity and dissimilarity using Hill numbers at different species aggregation levels
+
+Here is a tutorial on the 'econetwork' where the network diversity indices described in Ohlmann et al. 2019 Ecol. Let. are implemented.
+We will simulate a dataset of networks and then compute diversities indices and dissimilarities at different nodes aggregation levels (i.e species).
+
+### Installing the pacakge
+The package is availabel on CRAN. Just run :
+
+```{r setup}
+#install.packages('econetwork')
+```
+
+### Building a simulated datase of networks using the Block Model
+
+Here, we build a simulated dataset that consists in a list of labeled graphs (by the names of the species). To do so, we will sample local networks in random model of graph : the Block Model. **Careful** : the *sample_sbm* function of the 'igraph' package does not sample a Stochastic Block Model but a Block Model since the groups are fixed *a priori*.
+
+```{r cars,message=F,warning=F}
+#required packages
+library(igraph)
+library(econetwork)
+library(intergraph)
+library(GGally)
+library(ggplot2)
+library(grid)
+library(gridExtra)
+library(sna)
+
+```
+
+
+
+```{r}
+
+#sample the metaweb
+N <- 400 #number of species
+
+pm <- cbind( c(.001, .01,.001,.001), c(.001, .001,.01,.001), c(.001, .001,.001,.01), c(.001, .001,.001,.001) ) #probability of links between blocks (i.e. groups of species)
+gMeta <- sample_sbm(N, pref.matrix=pm, block.sizes=c(N/4,N/4,N/4,N/4),directed = T)
+V(gMeta)$name <- as.character(1:N)
+
+# to get a nice layout !
+goldenRatio <- (sqrt(5) + 1)/2
+fibonacciAngle <- 360/(goldenRatio^2)
+c <- 1
+numPoints <- 100
+x <- rep(0,numPoints)
+y <- rep(0,numPoints)
+
+for (n in 1:numPoints) {
+  r <- c*sqrt(n)
+  theta <- fibonacciAngle*(n)
+  x[n] <- r*cos(theta)
+  y[n] <- r*sin(theta)
+}
+coords <- rbind(cbind(0.2*x,y),cbind(0.4*x,y-50),cbind(0.6*x,y-100),cbind(x,y-150))
+
+gMeta_ggnet <- intergraph::asNetwork(as.undirected(gMeta))
+gMeta_ggnet %v% "x" = coords[, 1]
+gMeta_ggnet %v% "y" = coords[, 2]
+
+ggnet2(gMeta_ggnet, mode = c("x", "y"),node.size = 2,color = 'skyblue',edge.color = 'grey',alpha = 0.7)  +
+  theme(panel.background = element_rect(fill = "black"))+theme(legend.position = "none")+
+  theme(plot.margin = unit(c(0,0,0,0), "lines")) 
+```
+
+```{r}
+
+#build the local networks
+
+K <- 4
+
+#We sample local networks from the metanework
+#Defining local communities (i.e. nodes of the network) and local networks as induced subgraph of the metanetwork. We remove some edges of the local network to simulate plasticity of interactions.
+
+speciesList <- list()
+gList <- list()
+
+par(mfrow=c(2,2))
+
+for (k in 1:K){
+  speciesLoc <- c(as.character(1:(N/4-2*k+2)),as.character((N/4+1):(2*N/4-4*k+4)),as.character((2*N/4+1):(3*N/4-8*k+8)),as.character((3*N/4+1):(N-16*k+16)))
+  gLoc <- induced_subgraph(gMeta, speciesLoc)
+  if(k != 1){
+    gLoc<-delete_edges(gLoc, sample(1:length(E(gLoc)))[1:10*k]) #randomly remove edges
+  }
+  eval(parse(text=paste0('g_',k,'_ggnet <- intergraph::asNetwork(as.undirected(gLoc))')))
+  eval(parse(text=paste0('g_',k,'_ggnet %v% "x" = coords[as.numeric(speciesLoc), 1]')))
+  eval(parse(text=paste0('g_',k,'_ggnet %v% "y" = coords[as.numeric(speciesLoc), 2]')))
+  eval(parse(text=paste0('p_',k,'<-ggnet2(g_',k,'_ggnet, mode = c("x", "y"),node.size = 2,color = "skyblue",edge.color = "grey",alpha = 0.7)  + 
+                         theme(panel.background = element_rect(fill = "black"))+theme(legend.position = "none")+  
+                         theme(plot.margin = unit(c(0,0,0,0), "lines"))')))
+  speciesList <- c(speciesList,list(speciesLoc))
+  gList <- c(gList,list(gLoc))
+}
+grid.arrange(p_1, p_2, p_3,p_4, widths=c(4, 4), heights=c(4, 4))
+names(gList) <- as.character(1:K)
+
+```
+
+# Cluster similar species in groups
+
+The method allows to compute diversity indices/dissimilarities at different aggregation levels. In the case of these simulated data, the groups are knwon. However, on ecological data, the groups can be inferred using the stochastic block model (not to generate networks but to infer groups) using the 'blockmodels' R package (for example).
+
+# Computing diversities and dissimilarities
+
+alpha-, beta- and gamma-diversities  
+
+
+We first compute diversity indices at different aggregation levels. Importantly, it is possible to compute alpha-, gamma- and beta-diversities of species (or group) abundances), link abundances or link probabilities while varying a parameter eta that gives more weight to abundant group/links/link probabilities. Moreover, for diversity indices computation, two framework are implemented 'RLC' (for Reeve Leinster Cobbold) and 'Chao' (for Prof. Chao). The presentation and pros/cons of the different frameworks can be found in the Supplementary Information of Ohlmann et al. 2019 Ecol. Let. For eta=0, abundances do not matter. For eta=1, the indices are linked to Shannon entropy (alpha- and gamma-diversity) and to Kullback-Leibler divergence (beta-diversity).
+
+```{r}
+#Defining the group vector 
+groups <- c(rep(1,N/4),rep(2,N/4),rep(3,N/4),rep(4,N/4))
+names(groups) <- V(gMeta)$name
+
+#Diversity indices at a species level (microscopic diversity) with eta=1 and Reeve Leinster Cobbold framework
+divPartition(gList = gList,groups = NULL,eta = 1,framework = 'RLC', type = 'P')
+div_L <- divPartition(gList = gList,groups = NULL,eta = 1,framework = 'RLC', type = 'L')
+div_L$mAlpha
+div_L$Alphas
+div_L$Beta
+div_L$Gamma #we do not look at div_L$meta
+divPartition(gList = gList,groups = NULL,eta = 1,framework = 'RLC', type = 'Pi')
+
+#Diversity indices at a group level (mesoscopic diversity) 
+divPartition(gList = gList,groups = groups,eta = 1,framework = 'RLC', type = 'P')
+div_groups_L <- divPartition(gList = gList,groups = groups,eta = 1,framework = 'RLC', type = 'L')
+div_groups_L$mAlpha
+div_groups_L$Alphas
+div_groups_L$Beta
+div_groups_L$Gamma
+divPartition(gList = gList,groups = groups,eta = 1,framework = 'RLC', type = 'Pi')
+
+```
+
+For interpretation of these indices, we refer to Ohlmann et al. 2019.
+
+In order to describe ecological network patterns, dissimilarity indices on group abundances, link abundances and link probabilities based on diversity indices can be computed. Here again, the eta parameter change the weight given to abundant groups/links/link probabilities.
+
+
+# Adding species abundances
+
+It is also possible to use species abundances in the computation of diversity indices. To do so, use the 'abTable' argument.
+
+```{r}
+abTable <- sapply(1:K,function(x) rpois(N,1)+1) #generating random non nul abundance data
+rownames(abTable) = as.character(1:N) 
+sp_loc <- lapply(gList,function(g) V(g)$name) #setting to 0 the abundances of species that are absent locally
+for(i in 1:K){
+  abTable[setdiff(as.character(1:400), sp_loc[[i]]),i] = 0
+}
+
+divPartition(gList = gList,groups = NULL,eta = 1,framework = 'RLC', type = 'P',abTable = abTable)
+div_L <- divPartition(gList = gList,groups = NULL,eta = 1,framework = 'RLC', type = 'L',abTable = abTable)
+div_L$mAlpha
+div_L$Alphas
+div_L$Beta
+div_L$Gamma #we do not look at div_L$meta
+divPartition(gList = gList,groups = NULL,eta = 1,framework = 'RLC', type = 'Pi',abTable = abTable)
+```
+

@@ -7,7 +7,12 @@ output:
 
 <br/><br/> 
 
-### Reperesenting trophic networks with 'metanetwork'
+### Computing network diversity indices with 'econetwork' package
+
+- [Tutorial](econetwork.html)
+
+
+### Representing trophic networks with 'metanetwork' package
 
 - [pyramid example](https://marcohlmann.github.io/metanetwork/articles/pyramid.html)
 - [Angola dataset analysis](https://marcohlmann.github.io/metanetwork/articles/angola.html)

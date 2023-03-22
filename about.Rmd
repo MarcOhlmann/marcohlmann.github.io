@@ -11,7 +11,7 @@ output:
 
 
 
-<a href="documents/Training_school_Ohlmann_multispecies.pdf">CV détaillé </a>
+<a href="documents/CV.pdf">CV détaillé ici</a>
 
 
 ## Experience professionelles 

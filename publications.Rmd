@@ -12,9 +12,11 @@ output:
 
 ## Preprints
 
+- **Ohlmann, M.,** Garnier, J., & Vuillon, L. (2022). *‘metanetwork’: a R package dedicated to handling and representing trophic metanetworks.*  Authorea. December 19, 2022. https://www.authorea.com/doi/full/10.22541/au.167144447.78914274/v1
+
 - **Ohlmann, M.,** Munoz, F., Massol, F., & Thuiller, W. (2022). *Assessing mutualistic metacommunity capacity by integrating spatial and interaction networks.* arXiv preprint arXiv:2206.11029. https://arxiv.org/abs/2206.11029
 
-- Miele, V., Matias, C., **Ohlmann, M.,** Poggiato, G., Dray, S., & Thuiller, W. (2021). *Quantifying the overall effect of biotic interactions on species communities along environmental gradients.* arXiv preprint arXiv:2103.10433.
+- **Ohlmann, M.,** Poggiato, G., Dray, S., Thuiller, W.,  Matias, C. & Miele, V., (2021). *Quantifying the overall effect of biotic interactions on species communities along environmental gradients.* arXiv preprint arXiv:2103.10433.
 https://arxiv.org/abs/2103.10433
 
 ## [2022]()
