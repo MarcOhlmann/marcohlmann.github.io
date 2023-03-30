@@ -33,7 +33,7 @@ output:
 - *2016-2019* : [<img src="pictures/uga.png" alt="UGA" align="right" style="width:100px;">](https://www.univ-grenoble-alpes.fr/) Thèse de doctorat au Laboratoire d'Écologie Alpine, *Vers une théorie spatiale des réseaux d'interactions en écologie: concepts, méthodes et applications* sous la direction de Wilfried Thuiller
 
 - *2012 – 2016* :  [<img src="pictures/polytechnique.jpg" alt="X" align="right" style="width:300px;">](https://www.polytechnique.edu/)
-Ingénieur de l'école Polytechnique
+Ingénieur de l'École polytechnique
 
 <br/><br/>
 
@@ -46,16 +46,20 @@ Baccalauréat Scientifique, Mention Très bien. Metz (57).
 
 <br/><br/>
 
-## Skills
+## Compétences 
 
 <br/>
 
-**Programming**
+- Biostatistiques
 
-- *Languages* :  
-R / Python / Latex
+- Analyse de données
 
-- *Tools* :  
+**Programmation**
+
+- *Langages* :  
+R / Python / Bash / Latex
+
+- *Outils* :  
 Git
 
 <br/><br/>
@@ -64,13 +68,43 @@ Git
 
 <br/>
 
--  <img src="pictures/anr-projet-logo.jpg" alt="ANR" align="right" style="width:100px;"> [ANR Econet]((https://cmatias.perso.math.cnrs.fr/ANR_EcoNet.html)), *Advanced statistical modelling of ecological networks*
+<img src="pictures/anr-projet-logo.jpg" alt="ANR" align="right" style="width:100px;"> <FONT size="4pt"> [ANR Econet]((https://cmatias.perso.math.cnrs.fr/ANR_EcoNet.html)), Advanced statistical modelling of ecological networks </FONT>
 
 <br>
 <br>
+<br>
+<br>
 
-- [ORCHAMP](https://orchamp.osug.fr/home) , Observatoire spatio-temporel de la biodiversité et du fonctionnement des socio-écosystèmes de montagne
+<FONT size="4pt"> [ORCHAMP](https://orchamp.osug.fr/home) , Observatoire spatio-temporel de la biodiversité et du fonctionnement des socio-écosystèmes de montagne </FONT>
 
 <img src="pictures/LogoOR.jpg" alt="ORCHAMP" align="center" style="width:150px;"> 
 
+  - *Participation à l'installation des placettes et aux campagnes d'échantillonage de la biodiversité depuis 2016.* <br>
+  - *Analyse des données d'ADN environnmental du sol*
+<br>
+<br>
+
 <img src="pictures/ORCHAMP_map.jpg" alt="ORCHAMP" align="center" style="width:600px;"> 
+<br>
+Carte des gradient ORCHAMP
+
+<br>
+<br>
+
+<img src="pictures/ARG.png" alt="ORCHAMP" align="center" style="width:600px;"> 
+<br>
+Installation d'une placette au dessus du glacier d'Argentière, massif du Mont-Blanc 
+
+<br>
+
+<img src="pictures/IMG_20220906_161147.jpg" alt="ORCHAMP" align="center" style="width:600px;"> 
+<br>
+Prélèvement de sol pour analyser l'ADN environnemental à l'Armenaz, Bauges
+
+<br>
+
+<img src="pictures/humain.png" alt="ORCHAMP" align="center" style="width:600px;"> <br>
+Piège photographique dans le vallon de Mercuel, en Tarentaise
+
+
+
