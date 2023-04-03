@@ -86,7 +86,7 @@ Git
 
 <img src="pictures/ORCHAMP_map.jpg" alt="ORCHAMP" align="center" style="width:600px;"> 
 <br>
-Carte des gradient ORCHAMP
+Carte des gradients ORCHAMP
 
 <br>
 <br>
