@@ -16,7 +16,9 @@ output:
 
 - **Ohlmann, M.,** Munoz, F., Massol, F., & Thuiller, W. (2022). *Assessing mutualistic metacommunity capacity by integrating spatial and interaction networks.* arXiv preprint arXiv:2206.11029. https://arxiv.org/abs/2206.11029
 
-- **Ohlmann, M.,** Poggiato, G., Dray, S., Thuiller, W.,  Matias, C. & Miele, V., (2021). *Quantifying the overall effect of biotic interactions on species communities along environmental gradients.* arXiv preprint arXiv:2103.10433.
+## [2023]()
+
+- **Ohlmann, M.,**, Matias, C.,  Poggiato, G., Dray, S., Thuiller, W. & Miele, V., (2021). *Quantifying the overall effect of biotic interactions on species communities along environmental gradients.* Ecological Modelling. (in press)
 https://arxiv.org/abs/2103.10433
 
 ## [2022]()
